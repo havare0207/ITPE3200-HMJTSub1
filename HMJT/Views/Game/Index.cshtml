@@ -6,11 +6,51 @@
 }
 
 <!-- Main page heading. -->
-<h1>My Games</h1>
+<div class="mb-4">
 
-<p class="text-muted">
-    Create and manage your custom Code Pursuit games.
-</p>
+    <div class="d-flex
+                flex-column
+                flex-md-row
+                justify-content-between
+                align-items-md-center
+                gap-2
+                mb-3">
+
+        <!-- Main heading for the page. -->
+        <h1 class="mb-0">
+            My Games
+        </h1>
+
+    </div>
+
+
+    <!-- Welcome information. -->
+    <section class="welcome-banner
+                    p-4
+                    p-md-5
+                    mb-4
+                    rounded-3
+                    text-white"
+             aria-labelledby="questions-welcome-heading">
+
+        <h2 id="questions-welcome-heading">
+            Welcome to Your Custom Games Collection!
+
+            <span aria-hidden="true">🎮</span>
+        </h2>
+        
+        <p class="mb-3">
+            Create your own custom games and add your favorite questions to them. 
+        </p>
+
+        <p class="mb-0">
+            Choose between three difficulty levels and six categories to create a game to help you learn coding in a more fun way.
+            You can also edit or delete your games at any time, so get started and create your first custom game today by pressing the button below!
+        </p>
+
+    </section>
+
+</div>
 
 <!-- Opens the page for creating a new custom game. -->
 <a asp-action="Create"
@@ -156,7 +196,7 @@
                                     <a asp-action="Update"
                                        asp-route-id="@game.GameId"
                                        class="btn btn-sm btn-warning"
-                                       aria-label="Edit game @game.Name">
+                                       aria-label="Edit Game Name @game.Name">
 
                                         Edit
 

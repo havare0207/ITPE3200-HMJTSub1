@@ -181,7 +181,7 @@ public class GameController : Controller
                 game.Name,
                 game.GameId);
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Create", "Question", new { gameId = game.GameId });
         }
         catch (DbUpdateException ex)
         {
