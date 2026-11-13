@@ -2797,3 +2797,31 @@ textarea:focus-visible,
     }
 }
 
+/* Medium icon in the large difficulty card */
+.difficulty-card .difficulty-icon-medium {
+    color: #111111;
+}
+
+/* Medium icon in the small deck preview */
+.setup-deck-card .difficulty-icon-medium {
+    color: #ffffff;
+}
+
+.difficulty-icon-easy,
+.difficulty-icon-medium,
+.difficulty-icon-hard {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.difficulty-icon-easy {
+    color: #ffffff;
+}
+
+.difficulty-icon-medium {
+    color: #111111;
+}
+
+.difficulty-icon-hard {
+    color: #ffffff;
+}
